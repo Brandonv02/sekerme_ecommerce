@@ -24,7 +24,7 @@ class MyButtonForm extends StatelessWidget {
           borderRadius: BorderRadius.circular(6.0),
           boxShadow: [
             BoxShadow(
-              color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+              color: Theme.of(context).colorScheme.primary.withOpacity(0.4),
               blurRadius: 7,
               offset: const Offset(0, 5),
             ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sekerme_ecommerce/app/presentation/views/login/widgets/login_divider.dart';
 import 'package:sekerme_ecommerce/app/presentation/widgets/my_button_form.dart';
+import 'package:sekerme_ecommerce/app/presentation/views/login/widgets/my_sign_up.dart';
 import 'package:sekerme_ecommerce/app/presentation/widgets/my_social_button.dart';
 
 import '../../widgets/my_text_form.dart';
@@ -98,31 +100,10 @@ class LoginView extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 30.0),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 1.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text('Don\'t have an account?',
-                          style: TextStyle(
-                              color: Colors.black54,
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w600
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: (){},
-                          child: Text('Sign Up',
-                            style: TextStyle(
-                                color: Theme.of(context).colorScheme.primary,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w600
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  MySignUp(onTap:(){
+                    context.go('/register',);
+                  }, text: 'Don t have an account perrito', enlace: 'Orale Sign Up',)
+
                 ],
               ),
             ),
