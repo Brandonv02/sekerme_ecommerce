@@ -44,4 +44,8 @@ app.*.map.json
 /android/app/release
 
 # Imagenes Propias
+
 /assets/images/Sekerme.png
+
+/assets/global/.env
+
